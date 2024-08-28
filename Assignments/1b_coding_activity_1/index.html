@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nate's Goal Tracking and Journaling</title>
+    
+    <!-- The following line references an external css file -->
+    <!-- It defines style rules for your page, and elements in your page -->
+    
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="container">
+        <div class="user">
+            <label class="sectionLabel" for="username">User's Name:</label>
+            <div>
+                <label id="username">Nate</label>
+            </div>
+        </div>
+        
+        <div class="dateAndTime">
+            <label class="sectionLabel" for="datetime">Date and time of the entry:</label>
+            <div>
+                <label id="datetime">08/28/24 10:37 AM</label>
+            </div>
+        </div>
+        
+        <div class="image">
+            <label class="sectionLabel" for="userImage">Uploaded Image:</label>
+            <div>
+                <img class="userImage" class id="userImage" src="nice_photo.png" alt="User Image">
+            </div>
+        </div>
+        
+        <div class="quote">
+            <label class="sectionLabel">Quote of the Day:</label>
+            <p>"The only time a man can be brave is when he's afraid." - Eddard Stark, Game of Thrones</p>
+        </div>
+        
+        <div class="journalEntry">
+            <label class="sectionLabel" for="journalText">Journal Entry:</label>
+            <div>
+                <textarea id="journalText" placeholder="Write your journal entry here..."></textarea>
+            </div>
+        </div>
+        
+        <div class="sleepHours">
+            <label class="sectionLabel" for="sleepHours">Hours of Sleep:</label>
+            <div>
+                <input type="number" id="sleepHours" min="0" max="24" placeholder="Enter hours">
+            </div>
+        </div>
+        
+        <div class="moodChecklist">
+            <label class="sectionLabel">How did you feel today?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="MoodCheckboxEnergetic"> Energetic</label>
+                <label><input type="checkbox" id="MoodCheckboxAnxious"> Anxious</label>
+                <label><input type="checkbox" id="MoodCheckboxMotivated"> Motivated</label>
+                <label><input type="checkbox" id="MoodCheckboxSad"> Sad</label>
+                <label><input type="checkbox" id="MoodCheckboxHappy"> Happy</label>
+                <label><input type="checkbox" id="MoodCheckboxTired"> Tired</label>
+                <label><input type="checkbox" id="MoodCheckboxExcited"> Excited</label>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <label class="sectionLabel">Average Hours of Sleep:</label>
+        <div>
+            <p id="averageSleep"></p>
+        </div>
+
+        <label class="sectionLabel">Mood Counts:</label>
+        <div>
+            <p id="energetic"></p>
+            <p id="anxious"></p>
+            <p id="motivated"></p>
+            <p id="sad"></p>
+            <p id="happy"></p>
+            <p id="tired"></p>
+            <p id="excited"></p>
+    </section>
+    
+    <section class="visuals">
+        <label class="sectionLabel">Visual Representation of Your Sleep:</label>
+        <div>
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Circle -->
+                <circle cx="100" cy="100" r="90" stroke="#d0d0d0" stroke-width="20" fill="none"/>
+                <!-- Sleeped Hours Circle -->
+                <circle cx="100" cy="100" r="90" stroke="#4CAF50" stroke-width="20" stroke-dasharray="283" stroke-dashoffset="141.5" fill="none" stroke-linecap="round" transform="rotate(-90 100 100)"/>
+                <!-- Central Text -->
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="36" fill="#333">
+                5h / 8h
+                </text>
+                <!-- Optional Label -->
+                <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" font-size="18" fill="#777">
+                Sleep Score
+                </text>
+            </svg>
+        </div>
+    </section>
+
+    <Section>
+        <label class="sectionLabel">AI Use:</label>
+        <div>
+            <label>AI used to generate svg. Used the following prompt: "Use svg shapes to communicate the user's sleep score. Show maybe that the slept only 5 out of 8 hours. Make it look modern and sleek" </label>
+            <label> I also use github copilot as a sort of auto-complete / pattern recognition, so that it removes the redundancy of copy and paste-ing</label>
+        </div>
+    </Section>
+
+    <!-- Load external JS files -->
+    <!-- This is where you will do most of the 'work' for your applications -->
+    <script src="js/main.js"></script>
+</body>
+</html>
