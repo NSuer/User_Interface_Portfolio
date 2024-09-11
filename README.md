@@ -7,3 +7,14 @@ Each Project is a seperate repo, so that github pages can work. Each project rep
 Hw will be included in this repo.
 
 All work is made by Nathan Suer
+
+# Project 1
+
+## Github repo
+https://github.com/NSuer/User_Interface_Project_1
+
+## Design Work
+https://github.com/NSuer/User_Interface_Project_1/blob/main/README.md
+
+## Public page 
+https://nsuer.github.io/User_Interface_Project_1/
