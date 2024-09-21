@@ -18,3 +18,6 @@ https://github.com/NSuer/User_Interface_Project_1/blob/main/README.md
 
 ## Public page 
 https://nsuer.github.io/User_Interface_Project_1/
+
+## Demo Video
+https://youtu.be/L80COjKEjEc
